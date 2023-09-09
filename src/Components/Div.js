@@ -28,7 +28,7 @@ function Div() {
   
   useEffect(() => {
     var num2 = Math.floor(Math.random() * 10) + 1;
-    while (num2 >= num1) {
+    while (num2 >= num1 || num2 === 1) {
       num2 = Math.floor(Math.random() * 10) + 1;
     }
     setNum2(num2);
