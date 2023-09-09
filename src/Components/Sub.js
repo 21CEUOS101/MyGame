@@ -1,5 +1,6 @@
 import React from 'react'
 import calc from '../calc'
+import { useEffect } from 'react'
 
 function Sub() {
 
@@ -13,20 +14,26 @@ function Sub() {
       setAnswer(parseInt(e.target.value));
   }
 
-  
   const Check = () => {
       const result = calc("-", num1, num2, answer);
       setStatus(result);
       setTimeout(() => {
           if (result === "Correct!") {
-              setNum1(Math.floor(Math.random() * 10) + 1);
-              setNum2(Math.floor(Math.random() * 10) + 1);
-              setAnswer(0);
+            setNum1(Math.floor(Math.random() * 10) + 1);
+            setAnswer(0);
           }
           setStatus("");
       }, 1000);
       
   }
+  
+  useEffect(() => {
+    var num2 = Math.floor(Math.random() * 10) + 1;
+    while (num2 >= num1) {
+      num2 = Math.floor(Math.random() * 10) + 1;
+    }
+    setNum2(num2);
+  }, [num1]);
   
   return (
     <>
