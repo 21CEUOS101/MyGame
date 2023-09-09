@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Style for the container */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style for the headings */
+h1 {
+  font-size: 24px;
+  color: #333; /* Change this color to your preference */
+  margin: 10px 0;
+}
+
+/* Style for the input */
+input {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc; /* Change this color to your preference */
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #007bff; /* Change this color to your preference */
+}
+
+/* Style for the status message */
+.status {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Style for the heading */
+h1 {
+  font-size: 36px;
+  color: #333; /* Change this color to your preference */
+  margin-bottom: 20px;
+}
+
+/* Style for the link */
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #007bff; /* Change this color to your preference */
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+a:hover {
+  border-color: #007bff; /* Change this color to your preference */
+  color: #0056b3; /* Change this color to your preference */
+}
+
+/* Style for the links */
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #007bff; /* Change this color to your preference */
+  border-bottom: 2px solid transparent;
+  margin: 0 20px;
+  padding: 5px 0;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.links a:hover {
+  border-color: #007bff; /* Change this color to your preference */
+  color: #0056b3; /* Change this color to your preference */
+}
+
