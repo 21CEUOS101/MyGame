@@ -10,6 +10,10 @@ function Sum() {
     const [status, setStatus] = React.useState("");
 
     const handleChange = (e) => {
+        if (e.target.value === "" || isNaN(e.target.value)) {
+            setAnswer(0);
+            return;
+        }
         setAnswer(parseInt(e.target.value));
     }
 
